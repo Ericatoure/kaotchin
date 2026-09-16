@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KAOTCHIN - Télécharger l'application</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; background: #f7f9f8; color: #244e40; line-height: 1.6; }
+    .container { width: min(1120px, 100%); margin: 0 auto; padding: 20px; }
+    header { text-align: center; padding: 34px 0 20px; }
+    .logo { width: 92px; height: 92px; object-fit: contain; }
+    h1 { color: #2e7d64; font-size: clamp(2rem, 5vw, 3.4rem); margin-top: 12px; }
+    .tagline { color: #5c6b65; font-size: 1.15rem; margin-top: 6px; }
+    .hero, .section { background: #fff; border: 1px solid #e3e9e6; border-radius: 16px; padding: clamp(20px, 4vw, 38px); margin: 22px 0; box-shadow: 0 12px 28px rgba(46, 125, 100, .08); }
+    .hero { display: grid; grid-template-columns: 1.2fr .8fr; gap: 28px; align-items: center; }
+    .hero h2, .section h2 { color: #2e7d64; font-size: clamp(1.5rem, 4vw, 2.1rem); margin-bottom: 12px; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 22px; }
+    .btn { display: inline-flex; justify-content: center; align-items: center; min-height: 48px; padding: 12px 20px; border-radius: 12px; text-decoration: none; font-weight: 700; }
+    .btn-primary { background: #2e7d64; color: #fff; }
+    .btn-secondary { background: #e8f3f0; color: #2e7d64; }
+    .qr-card { text-align: center; background: #f7f9f8; border: 2px solid #2e7d64; border-radius: 14px; padding: 18px; }
+    .qr-card img { width: min(260px, 70vw); height: min(260px, 70vw); display: block; margin: 0 auto 10px; }
+    .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; margin-top: 18px; }
+    .feature { background: #f7f9f8; border: 1px solid #e3e9e6; border-radius: 12px; padding: 16px; }
+    .feature h3 { color: #2e7d64; margin-bottom: 6px; font-size: 1rem; }
+    .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 12px; margin-top: 14px; }
+    .step { background: #e8f3f0; border-radius: 12px; padding: 14px; }
+    .note { border-left: 4px solid #2e7d64; background: #e8f3f0; padding: 14px; border-radius: 8px; margin-top: 18px; }
+    footer { text-align: center; color: #5c6b65; padding: 28px 0; font-size: .92rem; }
+    @media (max-width: 760px) { .hero { grid-template-columns: 1fr; } .actions .btn { width: 100%; } .container { padding: 14px; } }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header>
+      <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%232E7D64'/%3E%3Ctext x='50' y='60' font-size='46' text-anchor='middle' fill='white'%3E♥%3C/text%3E%3C/svg%3E" alt="Logo KAOTCHIN" class="logo">
+      <h1>KAOTCHIN</h1>
+      <p class="tagline">L'oreille qui écoute les étudiants</p>
+    </header>
+    <section class="hero">
+      <div>
+        <h2>Télécharge l'application Android</h2>
+        <p>KAOTCHIN réunit le chat bienveillant, les outils de bien-être, les méthodes d'étude, les mini-jeux et l'aide d'urgence dans une seule application gratuite et confidentielle.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="./kaotchin.apk" download>Télécharger l'APK</a>
+          <a class="btn btn-secondary" href="./qr-print.html">Afficher le QR code imprimable</a>
+        </div>
+        <div class="note"><strong>Conseil :</strong> si Android bloque l'installation, autorise temporairement l'installation depuis ton navigateur, puis ouvre le fichier téléchargé.</div>
+      </div>
+      <div class="qr-card">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=360x360&data=https://erica.devsione.ci/downloads/kaotchin.apk" alt="QR code de téléchargement KAOTCHIN">
+        <strong>Scanne pour télécharger</strong>
+        <p>https://erica.devsione.ci/downloads/kaotchin.apk</p>
+      </div>
+    </section>
+    <section class="section">
+      <h2>Tout ce que tu trouveras dans l'app</h2>
+      <div class="features">
+        <article class="feature"><h3>Chat confidentiel</h3><p>Un espace pour parler de ton stress, de tes émotions et de tes difficultés sans jugement.</p></article>
+        <article class="feature"><h3>Respiration guidée</h3><p>Un exercice 4-4-6-2 pour retrouver le calme quand la pression monte.</p></article>
+        <article class="feature"><h3>Pomodoro</h3><p>Un minuteur de concentration avec cycles de travail et pauses courtes.</p></article>
+        <article class="feature"><h3>Méthodes d'étude</h3><p>Mind Map, répétition espacée, Feynman, écriture active et SQ3R regroupés au même endroit.</p></article>
+        <article class="feature"><h3>Mini-jeux</h3><p>Devine le nombre, calcul rapide, Memory et quiz bien-être pour apprendre en respirant un peu.</p></article>
+        <article class="feature"><h3>Calcul de période menstruelle</h3><p>Estimation des prochaines règles, de l'ovulation et de la période féconde.</p></article>
+        <article class="feature"><h3>Conseils bien-être</h3><p>Des rappels simples sur le sommeil, l'eau, les pauses et la gestion des notifications.</p></article>
+        <article class="feature"><h3>Aide d'urgence</h3><p>Numéros utiles et message de soutien renforcé quand une situation devient dangereuse.</p></article>
+      </div>
+    </section>
+    <section class="section">
+      <h2>Comment télécharger sans se perdre</h2>
+      <div class="steps">
+        <div class="step"><strong>1. Scanne</strong><p>Ouvre l'appareil photo et vise le QR code.</p></div>
+        <div class="step"><strong>2. Télécharge</strong><p>Appuie sur le lien puis sur le fichier APK.</p></div>
+        <div class="step"><strong>3. Installe</strong><p>Autorise l'installation si Android le demande.</p></div>
+        <div class="step"><strong>4. Commence</strong><p>Choisis ton pseudo et entre dans ton espace confidentiel.</p></div>
+      </div>
+    </section>
+    <footer>
+      <p>KAOTCHIN - Gratuit, confidentiel et pensé pour les étudiants africains.</p>
+      <p>Version Android APK - © 2026</p>
+    </footer>
+  </main>
+</body>
+</html>
