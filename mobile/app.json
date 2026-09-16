@@ -1,0 +1,36 @@
+﻿
+{
+  "expo": {
+    "name": "KAOTCHIN",
+    "slug": "HAHAA",
+    "version": "2.0.0",
+    "icon": "./assets/icon.png",
+    "backgroundColor": "#FAF8F3",
+    "orientation": "default",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FAF8F3"
+    },
+    "updates": {
+      "enabled": false
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "100f01c2-eaf6-45c9-9e2d-1a123607a9e2"
+      }
+    },
+    "android": {
+      "package": "com.erica30.hahaa",
+      "softwareKeyboardLayoutMode": "resize",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FAF8F3"
+      }
+    }
+  }
+}
+
