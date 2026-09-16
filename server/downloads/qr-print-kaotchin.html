@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Code KAOTCHIN - À imprimer</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; background: #f3f6f5; color: #244e40; padding: 20px; }
+    .poster { width: min(820px, 100%); margin: 0 auto; background: #fff; border-radius: 14px; padding: clamp(22px, 5vw, 46px); text-align: center; box-shadow: 0 12px 28px rgba(0,0,0,.1); }
+    .logo { color: #2e7d64; font-size: clamp(2.4rem, 8vw, 4.8rem); font-weight: 800; letter-spacing: 0; }
+    h1 { color: #2e7d64; font-size: clamp(2.2rem, 7vw, 4rem); margin-top: 8px; }
+    h2 { font-size: clamp(1.3rem, 4vw, 2rem); margin: 12px 0 24px; }
+    .qr { display: inline-block; background: #fff; border: 5px solid #2e7d64; border-radius: 18px; padding: clamp(14px, 4vw, 28px); }
+    .qr img { width: min(430px, 78vw); height: min(430px, 78vw); display: block; }
+    .link { margin: 18px auto 0; font-weight: 700; color: #2e7d64; overflow-wrap: anywhere; }
+    .pitch { background: #e8f3f0; border-radius: 14px; padding: 18px; margin-top: 26px; font-size: 1.08rem; }
+    .features { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 22px; }
+    .feature { background: #f7f9f8; border: 1px solid #e3e9e6; border-radius: 12px; padding: 13px; font-weight: 700; color: #2e7d64; }
+    button { margin-top: 24px; background: #2e7d64; color: #fff; border: 0; border-radius: 10px; padding: 12px 22px; font-weight: 700; cursor: pointer; }
+    @media (max-width: 620px) { .features { grid-template-columns: 1fr; } body { padding: 10px; } }
+    @media print { body { background: #fff; padding: 0; } .poster { box-shadow: none; border-radius: 0; width: 100%; } button { display: none; } }
+  </style>
+</head>
+<body>
+  <main class="poster">
+    <div class="logo">KAOTCHIN</div>
+    <h1>Télécharge l'application</h1>
+    <h2>Scanne ce QR code avec ton téléphone</h2>
+    <div class="qr">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsAQMAAABDsxw2AAAABlBMVEX///8AAABVwtN+AAAACXBIWXMAAA7EAAAOxAGVKw4bAAABY0lEQVRoge2ZwZHDMAwDmQpcgkt1qyrBFZhniQSlJPfI74IbYDyOHe0PEUgxZp/pcOjsr/fd2yOvUhP2HdiZrnVgXLZf/bKbjJWHMDosfPfiy/pwvwkjxvIht7Cw/4DZ5t373MvCiLEZ0e432ZN5z9Xfk1zYl2MOoew+5XNubWFM2JO2/l33+n1JGA92lO9DPaX3+/PKJjlbZWFMWJbaITRUo+w6AGFsWJTdcD/ItL7IfY4mhHFhPZ/juSGiw/ql4xJGgaXdlkceZPWFDnmWYGF/jh1YTWetzqcYElb2CuPBvK7YrWG9IYSRvcKIsKnN0TLhcNrsZTQhjALrr7in9TVwaFlMhRFhq3xE9AhnmB77WhgVdjiEoJ4D/LWVEkaEIaJjL9t6lgnrd2F82Or7+BGMpdB7kgsjxDASXIuvMGbsrNmgTVgYG1YR7S//ibvn4FcYF+ZQ+B7z/GY5vQ8Jo8I+0w8guynwfWgneQAAAABJRU5ErkJggg==" alt="QR code de téléchargement KAOTCHIN">
+    </div>
+    <p class="link">https://erica.devsione.ci</p>
+    <div class="pitch">
+      <strong>Gratuit, confidentiel et utile pour les étudiants.</strong><br>
+      Chat bienveillant, respiration guidée, Pomodoro, méthodes d'étude, mini-jeux, calcul de période menstruelle et aide d'urgence.
+    </div>
+    <div class="features">
+      <div class="feature">Disponible 24/7</div>
+      <div class="feature">100% gratuit</div>
+      <div class="feature">Espace confidentiel</div>
+    </div>
+    <button onclick="window.print()">Imprimer l'affiche</button>
+  </main>
+</body>
+</html>
